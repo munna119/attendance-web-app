@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Processor</title>
+</head>
+<body>
+    <h2>Upload Attendance Files</h2>
+
+    <form method="post" enctype="multipart/form-data">
+        <label>Attendance CSV (z.csv)</label><br>
+        <input type="file" name="zfile" required><br><br>
+
+        <label>Reference Roll File (r.xlsx)</label><br>
+        <input type="file" name="rfile" required><br><br>
+
+        <button type="submit">Process Attendance</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Result</title>
+</head>
+<body>
+    <h2>Attendance Summary</h2>
+
+    <p>Total Students: {{ summary.total }}</p>
+    <p>Present: {{ summary.present }}</p>
+    <p>Absent: {{ summary.absent }}</p>
+
+    <h3>Download Files</h3>
+
+    <a href="/download?file={{ clean_file }}">Download Clean Roll List</a><br><br>
+    <a href="/download?file={{ attendance_file }}">Download Attendance Sheet</a><br><br>
+
+    <a href="/">Go Back</a>
+</body>
+</html>
